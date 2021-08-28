@@ -1,0 +1,5 @@
+# Disallow accessing anything in the directory other than ./deploy.php
+Require all denied
+<FilesMatch ^\/?deploy\.php$>
+    Require all granted
+</FilesMatch>
